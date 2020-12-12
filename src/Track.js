@@ -2,7 +2,7 @@
 
 var urls = require('./urls.json');
 var request = require('request');
-var parser = require('xml2json');
+var parser = require('xml2json-light');
 
 module.exports.byPhone = function(phone, callback) {
     if( !phone || !callback) {

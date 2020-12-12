@@ -74,7 +74,8 @@ var Address = function(parameters) {
         }
 
         if (typeof this._parameters == 'number') {
-            this._parameters+='';
+           // this._parameters+='';
+          // this.parse(this._parameters);
         }
 
         if (typeof this._parameters == 'string') {

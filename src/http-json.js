@@ -30,6 +30,8 @@ module.exports.post = function(url, req, callback) {
 
       try {
           var parsed = JSON.parse(body);
+          console.log('boop');
+          console.log(parsed);
       }
       catch(error){
         console.log(error);
@@ -52,7 +54,11 @@ module.exports.get = function(url, callback){
         headers: {
             'Referer': urls.referer
         }
+      
     };
+    console.log('beep');
+    console.log(requestBody.uri);
+
     http.get(requestBody, function (error, res, body) {
             if (error){  //If request errored out.
                 callback({
@@ -71,6 +77,8 @@ module.exports.get = function(url, callback){
 
             try {
                 var parsed = JSON.parse(body);
+                console.log('beep');
+                console.log(parsed);
             }
             catch(error){
               console.log(error);

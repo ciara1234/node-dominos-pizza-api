@@ -24,7 +24,7 @@ var findNearbyStores = function(address, pickUpType, callback) {
         return false;
     }
 
-    var address = new Address(address)
+    var address = new Address(parseInt(address))
     var addressLines=address.getAddressLines();
 
     var url = urls.store.find.replace(

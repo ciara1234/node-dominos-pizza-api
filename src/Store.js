@@ -51,8 +51,7 @@ Store.prototype.getMenu = function(callback, lang, noCache) {
         callback(this.cachedMenu); //TODO break compatibility by removing first parameter
     }).bind(this));
 
-    /*
-    httpJson.get(
+        httpJson.get(
         url,
         (function(response) {
             fs.writeFile('sampleResp/menu'+this.ID+'.json', JSON.stringify(response, null, 4), function (err) {
@@ -61,7 +60,7 @@ Store.prototype.getMenu = function(callback, lang, noCache) {
             });
         }).bind(this)
     );
-    */
+    
 };
 
 Store.prototype.getFriendlyNames = function(callback, lang) {
